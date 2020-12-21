@@ -12,7 +12,13 @@
       "releaseType": "Beta1"
     }
   },
-  "deviceConfig": {},
+  "deviceConfig": {
+    "default": {
+      "network": {
+        "cleartextTraffic": true
+      }
+    }
+  },
   "module": {
     "package": "com.unfbx.jsappdemo",
     "name": ".MyApplication",
@@ -56,6 +62,11 @@
           "designWidth": 720,
           "autoDesignWidth": false
         }
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
       }
     ]
   }

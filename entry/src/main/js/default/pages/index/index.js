@@ -8,6 +8,7 @@ const ACTION_ASYNC = 1;
 const ACTION_MESSAGE_CODE_PLUS = 1001;
 
 import router from '@system.router';
+import fetch from '@system.fetch';
 
 export default {
     data: {
@@ -19,11 +20,34 @@ export default {
         imageList: ['/common/food_000.JPG', '/common/food_001.JPG', '/common/food_002.JPG', '/common/food_003.JPG'],
     },
     submit: function() {
-        this.flag = true
-        console.log(this.flag)
-        router.push ({
-            uri: 'pages/detail/detail',
+
+        var data = {
+            "username":"xga",
+            "email":"453701735@qq.com"
+        }
+
+        fetch.fetch({
+            url: 'http://127.0.0.1:8080/user/sendmail',
+            method: 'POST',
+            header : {
+                "Content-Type": "application/json"
+            },
+            responseType: 'json',
+            data: data,
+            success: function(response) {
+                console.log('response code:' + response.code);
+                console.log('response data:' + response.data);
+            },
+            fail: function(data, code) {
+                console.log('fail callback');
+            },
         });
+
+//        this.flag = true
+//        console.log(this.flag)
+//        router.push ({
+//            uri: 'pages/detail/detail',
+//        });
     },
     getSum: function () {
         console.log("222222222222222222222222222222")
