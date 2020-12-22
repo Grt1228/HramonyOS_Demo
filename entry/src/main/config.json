@@ -66,7 +66,9 @@
     ],
     "reqPermissions": [
       {
-        "name": "ohos.permission.INTERNET"
+        "name": "ohos.permission.INTERNET",
+        "grantMode": "system_grant",
+        "reason": "获取远程资源"
       }
     ]
   }

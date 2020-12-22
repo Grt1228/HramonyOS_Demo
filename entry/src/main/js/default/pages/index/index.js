@@ -20,28 +20,30 @@ export default {
         imageList: ['/common/food_000.JPG', '/common/food_001.JPG', '/common/food_002.JPG', '/common/food_003.JPG'],
     },
     submit: function() {
-
-        var data = {
+        console.log("1121212121222222222222222222222222222222222222")
+        var param = {
             "username":"xga",
             "email":"453701735@qq.com"
         }
 
         fetch.fetch({
-            url: 'http://127.0.0.1:8080/user/sendmail',
-            method: 'POST',
+            url: "http://127.0.0.1:8080/user/sendmail",
+            //data: param,
+            method: "POST",
             header : {
                 "Content-Type": "application/json"
             },
-            responseType: 'json',
-            data: data,
-            success: function(response) {
-                console.log('response code:' + response.code);
-                console.log('response data:' + response.data);
+            responseType: "json",
+            success(response) {
+                console.log("2222222222222222222222222")
+                console.log("1111111"+JSON.stringify(response))
             },
-            fail: function(data, code) {
-                console.log('fail callback');
-            },
-        });
+            fail(data, code){
+                console.log("111111111111111111111111")
+                console.log(data)
+                console.log(code)
+            }
+        })
 
 //        this.flag = true
 //        console.log(this.flag)
