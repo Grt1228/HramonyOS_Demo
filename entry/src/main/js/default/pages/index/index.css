@@ -1,13 +1,13 @@
 .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 @media screen and (device-type: tv) {
     .qd {
         display: flex;
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         font-size: 32px;
         line-height: 60px;
         border-radius: 200px;
@@ -19,10 +19,50 @@
     }
 }
 @media screen and (device-type: phone) {
+
+    .tip{
+        font-size: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 180px;
+    }
+    .cal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+    }
+    .cal-logo{
+        width: 100px;
+        height: 100px;
+    }
+    .date-time-input{
+        width: 200px;
+        font-weight:500;
+        border-style: dotted;
+        opacity:0.8;
+    }
+    .money{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .money-logo{
+        width: 100px;
+        height: 90px;
+    }
+    .money-input{
+        width: 200px;
+        font-weight:500;
+        opacity:0.8;
+    }
     .qd {
         display: flex;
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         font-size: 32px;
         line-height: 60px;
         border-radius: 200px;
@@ -31,7 +71,16 @@
         font-size: 60px;
         box-shadow: 0px 0px 30px #a6c1ee;
         background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+        margin-top: 90px;
     }
+    
+    .pop{
+        width: 500px;
+        height: 500px;
+        margin: 50px;
+    }
+
+
 }
 /*!* tv *!*/
 /*@media screen and (device-type: tv) {*/

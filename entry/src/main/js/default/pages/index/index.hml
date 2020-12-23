@@ -1,8 +1,25 @@
 <!-- index.hml -->
 <div class="container">
-    <div class="qd" onclick="submit">
+    <div class="tip">
+        <text style="font-size: 70px;">这笔花销什么脸？</text>
+    </div>
+    <div class="cal">
+        <image src="../common/cd.png" class="cal-logo"></image>
+        <input class="date-time-input" type="date" data="{{date}}"></input>
+        <image src="../common/time.png" class="cal-logo" data="{{time}}"></image>
+        <input class="date-time-input" type="time"></input>
+    </div>
+    <div class="money">
+        <image src="../common/money1.png" class="money-logo"></image>
+        <input class="money-input" type="number"></input>
+    </div>
+    <div class="qd" onclick="submit" id="qd">
         <text>记录</text>
     </div>
+
+    <dialog class="pop" placement="topLeft" disabled="false" id="dialog">
+        <text>我是弹窗s</text>
+    </dialog>
 </div>
 <!--<div class="container">-->
 <!--    &lt;!&ndash; title area &ndash;&gt;-->
