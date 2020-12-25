@@ -24,7 +24,7 @@
     "name": ".MyApplication",
     "deviceType": [
       "phone",
-      "tv"
+      "wearable"
     ],
     "distro": {
       "deliveryWithInstall": true,

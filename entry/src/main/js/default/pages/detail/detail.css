@@ -5,7 +5,14 @@
     align-items: center;
 }
 
-.title {
-    font-size: 50px;
-    margin-bottom: 50px;
+.jump{
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
 }
