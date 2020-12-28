@@ -1,7 +1,7 @@
 <!-- index.hml -->
 <div class="container">
     <div class="tip">
-        <text style="font-size: 70px;">又花了多少大洋？</text>
+        <text style="font-size: 50px;">老实交代，又花了多少大洋？</text>
     </div>
     <div class="cal">
         <image src="../common/cd.png" class="cal-logo"></image>
@@ -22,7 +22,10 @@
     <div class="qd" onclick="submit" id="qd">
         <text>记录</text>
     </div>
-    <div class="jump" onclick="history">
+    <div class="top" onclick="top">
+        <text>排行</text>
+    </div>
+    <div class="history" onclick="history">
         <text>历史</text>
     </div>
 

@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="top">
+        <div class="text-container">
+            <text class="">
+                打工人，你的昨日的单日消费排行第一冲，继续加油！冲！继续保持！
+            </text>
+        </div>
+        <div class="text-container">
+            <text class="">
+                本月已经过去20天了，你已经消费了10320元，单月排行第5名，注意点啊，时刻关注花呗还剩多少额度！
+            </text>
+        </div>
+    </div>
+    <div class="moneyLog">
+        <text>
+            流水瀑布
+        </text>
+        <div>
+            <text>
+                瀑布流
+            </text>
+        </div>
+    </div>
+</div>

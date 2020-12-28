@@ -55,7 +55,8 @@
       {
         "pages": [
           "pages/index/index",
-          "pages/detail/detail"
+          "pages/detail/detail",
+          "pages/top/top"
         ],
         "name": "default",
         "window": {

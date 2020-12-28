@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    background-image: url("/pages/common/backimg.png") ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 70px 100px;
+    margin: 25px 0;
+}
+.moneyLog {
+    display: flex;
+    flex-direction: column;
+}

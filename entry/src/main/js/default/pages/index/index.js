@@ -73,6 +73,11 @@ export default {
             uri: 'pages/detail/detail',
         });
     },
+    top: function(){
+        router.push ({
+            uri: 'pages/top/top',
+        });
+    },
     submit: function() {
         this.$element('dialog').show()
 //        var param = {"phoneLevel":"0"}

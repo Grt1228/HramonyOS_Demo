@@ -82,7 +82,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin-top: 90px;
+        margin-top: 70px;
     }
     .cal-logo{
         width: 100px;
@@ -156,7 +156,7 @@
         height: 500px;
         margin: 50px;
     }
-    .jump{
+    .history{
         position: fixed;
         bottom: 40px;
         right: 40px;
@@ -165,7 +165,19 @@
         height: 150px;
         align-items: center;
         justify-content: center;
-        border-radius: 100%;
+        border-radius: 75px;
+    }
+
+    .top{
+        position: fixed;
+        bottom: 40px;
+        left: 40px;
+        background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+        width: 150px;
+        height: 150px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 75px;
     }
 
 
