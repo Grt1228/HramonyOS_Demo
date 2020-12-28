@@ -16,18 +16,21 @@ export default {
         date: null,
         time: null,
         emoji: [{
-                    "path": "../common/1-1.png",
-                    "selectPath": "../common/1.png",
+                    "path": "/pages/common/1-1.png",
+                    "selectPath": "/pages/common/1.png",
+                    "flag":true,
                     "id": 1
                 },
                 {
-                    "path": "../common/2-2.png",
-                    "selectPath": "../common/2.png",
+                    "path": "/pages/common/2-2.png",
+                    "selectPath": "/pages/common/2.png",
+                    "flag":false,
                     "id": 2
                 },
                 {
-                    "path": "../common/3-3.png",
-                    "selectPath": "../common/3.png",
+                    "path": "/pages/common/3-3.png",
+                    "selectPath": "/pages/common/3.png",
+                    "flag":false,
                     "id": 3
                 }
         ],
@@ -41,13 +44,11 @@ export default {
         imageList: ['/common/food_000.JPG', '/common/food_001.JPG', '/common/food_002.JPG', '/common/food_003.JPG'],
     },
     changeFace(index){
-        if(index == 1){
-            this.imgOne = "../common/1.png";
-        }else if(index == 2){
-            this.imgTwo = "../common/2.png";
-        }else{
-            this.imgThree = "../common/3.png";
-        }
+        this.emoji.forEach(element => {
+            element.flag = false;
+        });
+        this.emoji[index].flag = !this.emoji[index].flag;
+
     },
     changeDate: function(val){
         val.month = val.month +1;

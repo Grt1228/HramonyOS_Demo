@@ -14,10 +14,10 @@
         <input class="money-input" type="number"></input>
     </div>
     <div class="emjon">
-        <image src="../common/1-1.png" class="emjon-one" ></image>
-        <image src="../common/2-2.png" class="emjon-one emjon-ext" ></image>
-        <image src="../common/3-3.png" class="emjon-one" ></image>
-<!--        <image src="{{$item}}" class="image-mode" focusable="true" onclick="changeFace({{$id}})" for="{{emoji}}"></image>-->
+<!--        <image src="../common/1-1.png" class="emjon-one" ></image>-->
+<!--        <image src="../common/2-2.png" class="emjon-one emjon-ext" ></image>-->
+<!--        <image src="../common/3-3.png" class="emjon-one" ></image>-->
+        <image src="{{$item.flag == true ? $item.selectPath: $item.path}}" class="emjon-one {{$idx == 1 ? '' : 'emjon-ext'}}" focusable="true" onclick="changeFace({{$idx}})" for="{{emoji}}"></image>
     </div>
     <div class="qd" onclick="submit" id="qd">
         <text>记录</text>
