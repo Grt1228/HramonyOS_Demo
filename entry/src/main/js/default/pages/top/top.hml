@@ -2,12 +2,12 @@
     <div class="top">
         <div class="text-container">
             <text class="">
-                打工人，你的昨日的单日消费排行第一冲，继续加油！冲！继续保持！
+                打工人，你的昨日的单日消费排行第{{daysTop}}冲，继续加油！冲！继续保持！
             </text>
         </div>
         <div class="text-container">
             <text class="">
-                本月已经过去20天了，你已经消费了10320元，单月排行第5名，注意点啊，时刻关注花呗还剩多少额度！
+                本月已经过去{{days}}天了，你已经消费了{{monthMoney}}元，单月排行第{{monthTop}}名，注意点啊，时刻关注花呗还剩多少额度！
             </text>
         </div>
     </div>
@@ -15,10 +15,16 @@
         <text>
             流水瀑布
         </text>
-        <div>
-            <text>
-                瀑布流
-            </text>
+        <div class="log">
+            <div class="line"></div>
+            <div class="desc-container">
+                <div class="title">
+                    <text>2020-12-21 13:12:14</text>
+                </div>
+                <div class="desc">
+                    <text>早餐买肉包子</text>
+                </div>
+            </div>
         </div>
     </div>
 </div>

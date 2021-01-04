@@ -9,13 +9,41 @@
 .text-container{
     display: flex;
     flex-direction: column;
-    background-image: url("/pages/common/backimg.png") ;
+/*    background-image: url("/pages/common/backimg.png") ;*/
+    background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 70px 100px;
+    border-radius: 30px;
+    padding: 40px 70px;
     margin: 25px 0;
 }
 .moneyLog {
     display: flex;
     flex-direction: column;
+}
+
+.log{
+    background: #fffff9;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    background-size: 100% 100%;
+    border-radius: 30px;
+    padding: 40px 70px;
+    margin: 25px 0;
+}
+.line{
+    background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    width: 5px;
+    height: 10px;
+}
+.desc-container{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+
+}
+.desc{
+
 }
